@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(245, 202, 123);
+}
+
+header {
+    background-color: darkblue;
+    font-size: 15px;
+    text-align: center;
+    margin:0;
+    padding:5px;
+    width:100%;
+    color: white;
+}
+
+#titulo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+label {
+    font-size: 10px;
+    position: absolute;
+}
+
+form {
+    text-align: center;
+    font-size: 30px;
+}
+
+h3 {
+    padding-left: 435px;
+    text-align: justify;
+    color: darkblue;
+}
+
+/*faz o input ficar gordo e bonito*/
+input {
+    font-size: 25px;
+    padding: 10px;
+}
+
+#nome {
+    width: 1000px;
+}
+
+#CPF {
+    width: 484px;
+}
+
+#data {
+    width: 484px;
+}
+
+#email {
+    width: 484px;
+}
+
+#telefone {
+    width: 484px;
+}
+
+#endereco {
+    width:654px;
+}
+
+#complemento {
+    width:654px;
+}
+
+#cidade {
+    width: 484px;
+}
+
+#bairro {
+    width: 484px;
+}
+
+#senha {
+    width: 484px;
+}
+
+#senhaConfirma {
+    width: 484px;
+}
+
+
+button {
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+}
+/*jeff é o nome do botão de cadastro, alguem tem que mandar as informações anotadas pra gente, o jeff faz isso*/
+.jeff {
+    background-color: darkblue;
+    color: white;
+    width: 250px;
+    font-size: 20px;
+}
+
+p {
+    text-align: center;
+}

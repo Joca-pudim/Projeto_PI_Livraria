@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="StyleCadastro.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Cliente</title>
+</head>
+<body>
+    <main>
+            <h1>Market Place Livros</h1>
+        <header>
+            <h2><a href="" >Inicio</a> | <a href="">Catálogo</a> | <a href="">Minha conta</a> | <a href="">Meus pedidos</a></h2>
+        </header>
+    
+        
+        <section id="titulo">
+
+            <h1>Cadastro de Cliente</h1>
+            <p>Preencha seus dados para criar sua conta</p> <br>
+            
+        </section>
+
+        <form action="adoroquejo.com@gmail.com" method="post">
+            <section id="pessoais">
+                <h3>Dados Pessoais</h3>
+                <label for="nome">Nome*</label>
+                <input placeholder="Nome completo*" type="text" id="nome" name="nome" required><br>
+
+                <label for="CPF">CPF*</label>
+                <input placeholder="CPF*" type="number" id="CPF" name="CPF" required>
+
+                <label for="data">Data*</label>
+                <input placeholder="Data de nascimento*" type="date" id="data" name="data" required>
+
+            </section>
+        
+            <section id="contato">
+                <h3>Dados de contato</h3>
+                <label for="email">E-mail*</label>
+                <input placeholder="E-mail*" type="email" id="email" name="email" required>
+
+                <label for="telefone">Telefone*</label>
+                <input placeholder="Telefone*" type="number" id="telefone" name="telefone" required><br>
+
+            </section>
+            <section id="logradouro">
+                <h3>Endereço de entrega</h3>
+
+                <label for="CEP">CEP*</label>
+                <input placeholder="CEP*" type="number" id="CEP" name="CEP" required>
+
+                <label for="endereco">Rua / Avenida*</label>
+                <input placeholder="Rua / Avenida*" type="text" id="endereco" name="endereco" required><br>
+
+                <label for="numero">Numero*</label>
+                <input placeholder="Número*" type="number" id="numero" name="numero" required>
+
+                <label for="complemento">Complemento*</label>
+                <input placeholder="Complemento" type="text" id="complemento" name="complemento"><br>
+
+                <label for="bairro">Bairro*</label>
+                <input placeholder="Bairro*" type="text" id="bairro" name="bairro" required>
+
+                <label for="cidade">Cidade / Estado*</label>
+                <input placeholder="Cidade / Estado*" type="text" id="cidade" name="cidade" required>
+
+            </section>
+            <section id="seguranca">
+                <h3>Acesso à conta</h3>
+
+                <label for="senha">Senha*</label>
+                <input placeholder="Senha*" type="password" id="senha" name="senha" required>
+
+                <label for="senhaConfirma">Confirmar Senha*</label>
+                <input placeholder="Confirmar senha*" type="password" id="senhaConfirma" name="senhaConfirma" required>
+
+            </section>
+
+            <button class="jeff" type="submit">Criar conta</button>
+            <button type="reset">Cancelar</button>
+            
+        </form>
+            <p>*são obrigatorios</p>
+    </main>
+</body>
+</html>
