@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace de Livros - Detalhes da compra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+       <header>
+        <h1>MARKETPLACE DE LIVROS</h1>
+    </header>
+
+    <nav class="menu">
+        <a href="#">Início</a>
+        |
+        <a href="#">Catálogo</a>
+        |
+        <a href="#">Minha conta</a>
+        |
+        <a href="#">Meus pedidos</a>
+    </nav>
+
+    <main>
+
+        <h2 class="titulo">DETALHES DA COMPRA</h2>
+
+        <section class="pedido">
+
+            <div class="pedido-info">
+                <h3>Pedido nº 000123</h3>
+
+                <p>Data da compra: 17/10/2026</p>
+            </div>
+
+            <div class="produto">
+
+                <div class="capa">
+                    CAPA DO LIVRO
+                </div>
+
+                <div class="produto-info">
+
+                    <h3>Dom Casmurro</h3>
+
+                    <p>
+                        Autor: Machado de Assis<br>
+                        Categoria: Literatura brasileira<br>
+                        Condição: Usado – bom estado<br>
+                        Vendedor: Sebo Central<br>
+                        Quantidade: 1 unidade
+                    </p>
+
+                    <button class="btn-comprar">
+                        COMPRAR LIVRO
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="detalhes">
+
+            <div class="valor">
+
+                <h3>VALOR DO PEDIDO</h3>
+
+                <div class="caixa-valor">
+
+                    <p>Livro: R$ 18,00</p>
+                    <p>Frete: R$ 8,00</p>
+                    <p><strong>Total: R$ 26,00</strong></p>
+
+                </div>
+
+            </div>
+
+            <div class="status">
+
+                <h3>STATUS DA COMPRA</h3>
+
+                <div class="etapa ativa">
+                    <strong>1. Compra confirmada</strong>
+                    <p>Local: Centro de distribuição do vendedor</p>
+                </div>
+
+                <div class="etapa">
+                    <p>2. Em preparação</p>
+                    <p>Local: Sebo Central – endereço do vendedor</p>
+                </div>
+
+                <div class="etapa">
+                    <p>3. Pedido enviado</p>
+                    <p>Local: Centro de distribuição da transportadora</p>
+                </div>
+
+                <div class="etapa">
+                    <p>4. Pedido entregue</p>
+                    <p>Local: Endereço de entrega do cliente</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="pagamento">
+
+            <h3>FORMA DE PAGAMENTO</h3>
+
+            <p class="instrucao">
+                Selecione como deseja pagar:
+            </p>
+
+            <div class="opcoes-pagamento">
+
+                <label class="opcao">
+
+                    <input type="radio" name="pagamento" value="PIX">
+
+                    <span>
+                        PIX<br>
+                        Pagamento instantâneo
+                    </span>
+
+                </label>
+
+                <label class="opcao">
+
+                    <input type="radio" name="pagamento" value="Cartão de crédito">
+
+                    <span>
+                        Cartão de crédito<br>
+                        Parcelamento conforme condições
+                    </span>
+
+                </label>
+
+                <label class="opcao">
+
+                    <input type="radio" name="pagamento" value="Boleto bancário">
+
+                    <span>
+                        Boleto bancário<br>
+                        Pagamento conforme vencimento
+                    </span>
+
+                </label>
+
+            </div>
+
+        </section>
+
+        <section class="finalizar">
+
+            <div class="total">
+                TOTAL A PAGAR: R$ 26,00
+            </div>
+
+            <button class="btn-confirmar" onclick="confirmarPagamento()">
+                CONFIRMAR PAGAMENTO
+            </button>
+
+        </section>
+
+        <footer>
+
+            <a href="#" class="btn-voltar">
+                Voltar ao catálogo
+            </a>
+
+            <p>
+                Dados, valores e locais ilustrativos.
+                Os pagamentos e a atualização do pedido dependem da implementação do sistema.
+            </p>
+
+        </footer>
+
+    </main>
+
+    <script>
+
+        function confirmarPagamento() {
+
+            const pagamento = document.querySelector(
+                'input[name="pagamento"]:checked'
+            );
+
+            if (!pagamento) {
+                alert("Selecione uma forma de pagamento!");
+                return;
+            }
+
+            alert(
+                "Forma de pagamento selecionada: " +
+                pagamento.value +
+                "\nTotal: R$ 26,00"
+            );
+
+        }
+
+    </script>
+</body>
+</html>
