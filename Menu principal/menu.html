@@ -1,60 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu teste</title>
+    <title>Marketplace de Livros</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <header>
+
+    <header> <!--Titulos em geral-->
         <div class="Titulos">
-            <h1>MARKETPLACE DE LIVROS</h1><!-- Titulo da pagina depois mudar-->
+            <h1>MARKETPLACE DE LIVROS</h1>
+
             <nav>
-            <!--Necessario definir o tipo dos botoes dps--> <input type="Busca" placeholder="Buscar por titulo,autor,..."> </input> <div class="botoes"><button type="button">Pesquisar</button> <button type="button">Minha conta</button></div>
+                <input type="search" placeholder="Buscar por título, autor...">
+
+                <div class="botoes">
+                    <button type="button">Pesquisar</button>
+                    <button type="button">Minha conta</button>
+                </div>
             </nav>
         </div>
+
         <div class="Titulos">
             <h2>LIVROS EM DESTAQUE</h2>
         </div>
     </header>
-    <div class="categorias">
-        <P>Categorias: Literatura|Romance|História|Infantojuvenil</P>
-    </div>
-        <div class="LIVROS">
+
+    <main>
+        <div class="categorias">
+         <label for="categoria">Categorias:</label>
+            <select id="categoria">
+            <option value="todos">Todas as categorias</option>
+            <option value="literatura">Literatura</option>
+            <option value="romance">Romance</option>
+            <option value="historia">História</option>
+            <option value="infantojuvenil">Infantojuvenil</option>
+        </select>
+
+</div>
+
+        <div class="LIVROS"> <!--seção livros da pra usar isso no catalago?-->
+
             <div class="livro">
-            <h4>CAPA DO LIVRO</h4><!--Depois colocar uma imagem para aparecer dentro dos livros-->
-            <p>Titulo do livro</p><!--Alterar depois-->
-            <p>R$ Dinheiro</p>
-            <p>Ver detalhes</p><!--decidir se é interagivel-->
+                <h4>CAPA DO LIVRO</h4>
+                <p>Título do livro</p>
+                <p>R$ 50,00</p>
+                <a href="#">Ver detalhes</a>
             </div>
 
             <div class="livro">
-            <h4>CAPA DO LIVRO</h4><!--Depois colocar uma imagem para aparecer dentro dos livros-->
-            <p>Titulo do livro</p><!--Alterar depois-->
-            <p>R$ Dinheiro</p>
-            <p>Ver detalhes</p><!--decidir se é interagivel-->
+                <h4>CAPA DO LIVRO</h4>
+                <p>Título do livro</p>
+                <p>R$ 45,00</p>
+                <a href="#">Ver detalhes</a>
             </div>
 
             <div class="livro">
-            <h4>CAPA DO LIVRO</h4><!--Depois colocar uma imagem para aparecer dentro dos livros-->
-            <p>Titulo do livro</p><!--Alterar depois-->
-            <p>R$ Dinheiro</p>
-            <p>Ver detalhes</p><!--decidir se é interagivel-->
+                <h4>CAPA DO LIVRO</h4>
+                <p>Título do livro</p>
+                <p>R$ 35,00</p>
+                <a href="#">Ver detalhes</a>
             </div>
 
             <div class="livro">
-            <h4>CAPA DO LIVRO</h4><!--Depois colocar uma imagem para aparecer dentro dos livros-->
-            <p>Titulo do livro</p><!--Alterar depois-->
-            <p>R$ Dinheiro</p>
-            <p>Ver detalhes</p><!--decidir se é interagivel-->
+                <h4>CAPA DO LIVRO</h4>
+                <p>Título do livro</p>
+                <p>R$ 60,00</p>
+                <a href="#">Ver detalhes</a>
             </div>
+
         </div>
-    <div class="botoes">
-    <!-- Lembrar de mudar o tipo do botão se necessario--><button type="button">Lista de desejos</button> <button type="button">Consultar pedidos</button> <button type="button">Área do vendedor</button>
-    </div>
+
+        <div class="botoes">
+            <button type="button">Lista de desejos</button>
+            <button type="button">Consultar pedidos</button>    <!--mesmos botões de antes mas sem muita bagunça-->
+            <button type="button">Área do vendedor</button>
+        </div>
+    </main>
+
     <footer>
-        <p>Sobre|Ajuda|Politica de privacidade|contato</p>
+        <p>Sobre | Ajuda | Política de privacidade | Contato</p> <!--Basicamente o rodape-->
+        <p>Marketplace de Livros - 2026</p>
     </footer>
+
 </body>
 </html>
